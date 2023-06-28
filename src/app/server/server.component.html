@@ -1,0 +1,5 @@
+<p>This is a server component</p>
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]="username">
+{{username}}
+<button class="btn btn-primry" [disabled]="username === ''" (click)="username = ''">Reset User</button>
